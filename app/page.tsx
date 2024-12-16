@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <div>
       <Hero />
+      <AboutProgramSection />
       <Case />
       <ResearchGroupSection />
-      <AboutProgramSection />
       <CoordinatorSection />
       <FAQ />
       <CTA />
