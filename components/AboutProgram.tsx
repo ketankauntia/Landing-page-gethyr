@@ -7,9 +7,9 @@ export const AboutProgramSection = () => (
       <div className="grid border rounded-lg container py-8 grid-cols-1 gap-8 items-center lg:grid-cols-2">
         <div className="flex gap-10 flex-col">
           <div className="flex gap-4 flex-col">
-            {/* <div>
-              <Badge variant="outline">Platform</Badge>
-            </div> */}
+            <div>
+              <Badge variant="outline">About</Badge>
+            </div>
             <div className="flex gap-2 flex-col">
               <h2 className="text-3xl lg:text-5xl tracking-tighter max-w-xl text-left font-regular">
                 About The Program!
@@ -63,7 +63,7 @@ export const AboutProgramSection = () => (
             </div>
           </div>
         </div>
-        <div className="bg-muted rounded-md aspect-square"></div>
+        <div className="bg-muted rounded-md aspect-square hidden lg:block"></div>
       </div>
     </div>
   </div>
