@@ -21,54 +21,66 @@ export const Header = () => {
       description: "",
     },
     {
-      title: "Product",
-      description: "Managing a small business today is already tough.",
+      title: "Research Groups",
+      description: "Join the Research Group that suits you best ;)",
       items: [
         {
-          title: "Reports",
-          href: "/reports",
+          title: "Artificial Intelligence",
+          href: "/artificial Intelligence",
         },
         {
-          title: "Statistics",
-          href: "/statistics",
+          title: "Machine Learning",
+          href: "/machineLearning",
         },
         {
-          title: "Dashboards",
-          href: "/dashboards",
+          title: "Speech Processing",
+          href: "/speech-processing",
         },
         {
-          title: "Recordings",
-          href: "/recordings",
+          title: "NLP",
+          href: "/nlp",
+        },
+        {
+          title: "Blockchain",
+          href: "/blockchain",
+        },
+        {
+          title: "web dev",
+          href: "/web-dev",
+        },
+        {
+          title: "Image Processing",
+          href: "/image-processing",
         },
       ],
     },
-    {
-      title: "Company",
-      description: "Managing a small business today is already tough.",
-      items: [
-        {
-          title: "About us",
-          href: "/about",
-        },
-        {
-          title: "Fundraising",
-          href: "/fundraising",
-        },
-        {
-          title: "Investors",
-          href: "/investors",
-        },
-        {
-          title: "Contact us",
-          href: "/contact",
-        },
-      ],
-    },
+    // {
+    //   title: "Company",
+    //   description: "Managing a small business today is already tough.",
+    //   items: [
+    //     {
+    //       title: "About us",
+    //       href: "/about",
+    //     },
+    //     {
+    //       title: "Fundraising",
+    //       href: "/fundraising",
+    //     },
+    //     {
+    //       title: "Investors",
+    //       href: "/investors",
+    //     },
+    //     {
+    //       title: "Contact us",
+    //       href: "/contact",
+    //     },
+    //   ],
+    // },
   ];
 
   const [isOpen, setOpen] = useState(false);
   return (
-    <header className="w-full z-40 fixed top-0 left-0 bg-background">
+    <header className="w-full z-40 fixed top-0 left-0 bg-background border-b">
       <div className="container relative mx-auto min-h-20 flex gap-4 flex-row lg:grid lg:grid-cols-3 items-center">
         <div className="justify-start items-center gap-4 lg:flex hidden flex-row">
           <NavigationMenu className="flex justify-start items-start">
@@ -120,23 +132,49 @@ export const Header = () => {
             </NavigationMenuList>
           </NavigationMenu>
         </div>
-        <div className="flex lg:justify-center">
-          <p className="font-semibold">TWBlocks</p>
+        {/* FOR AN IAMGE (if used in future) 
+        
+        <div className="w-full flex justify-center lg:w-auto lg:justify-center">
+            <img
+                src="/your-image-path.png"
+                alt="Logo"
+                className="w-full max-w-xs object-contain lg:w-auto lg:max-w-none"
+            />
         </div>
+        
+        */}
+        {/* <div className="flex lg:justify-center">
+          <p className="font-semibold">Student Research Center</p>
+          {/* <p className="font-semibold">SRC</p> 
+        </div> */}
+        {/* <div className="w-full flex justify-center lg:w-auto lg:justify-center">
+          <p className="font-semibold text-center lg:text-left">
+            Student Research Center
+          </p>
+        </div> */}
+        <div className="w-full flex justify-center lg:w-auto lg:justify-center">
+          <p className="font-semibold whitespace-nowrap text-center lg:text-left ml-4">
+            Student Research Center
+          </p>
+        </div>
+
         <div className="flex justify-end w-full gap-4">
           <Button variant="ghost" className="hidden md:inline">
-            Book a demo
+            All Events
+          </Button>
+          <Button variant="ghost" className="hidden md:inline">
+            Contact Us
           </Button>
           <div className="border-r hidden md:inline"></div>
-          <Button variant="outline">Sign in</Button>
-          <Button>Get started</Button>
+          {/* <Button variant="outline">Contact Us</Button> */}
+          <Button className="hidden md:flex">Get started Now!</Button>
         </div>
         <div className="flex w-12 shrink lg:hidden items-end justify-end">
           <Button variant="ghost" onClick={() => setOpen(!isOpen)}>
             {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </Button>
           {isOpen && (
-            <div className="absolute top-20 border-t flex flex-col w-full right-0 bg-background shadow-lg py-4 container gap-8">
+            <div className="absolute top-14 border-t flex flex-col w-full right-0 bg-background shadow-lg py-4 container gap-8">
               {navigationItems.map((item) => (
                 <div key={item.title}>
                   <div className="flex flex-col gap-2">
