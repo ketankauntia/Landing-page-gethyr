@@ -25,12 +25,8 @@ export const Header = () => {
       description: "Join the Research Group that suits you best ;)",
       items: [
         {
-          title: "Artificial Intelligence",
-          href: "/artificial Intelligence",
-        },
-        {
-          title: "Machine Learning",
-          href: "/machineLearning",
+          title: "AI/ML",
+          href: "/ai-ml",
         },
         {
           title: "Speech Processing",
@@ -80,7 +76,7 @@ export const Header = () => {
 
   const [isOpen, setOpen] = useState(false);
   return (
-    <header className="w-full z-40 fixed top-0 left-0 bg-background border-b">
+    <header className="w-full z-40 fixed top-0 left-0 bg-background border-b bg-white">
       <div className="container relative mx-auto min-h-20 flex gap-4 flex-row lg:grid lg:grid-cols-3 items-center">
         <div className="justify-start items-center gap-4 lg:flex hidden flex-row">
           <NavigationMenu className="flex justify-start items-start">
@@ -108,7 +104,7 @@ export const Header = () => {
                               </p>
                             </div>
                             <Button size="sm" className="mt-10">
-                              Book a call today
+                              Check out now
                             </Button>
                           </div>
                           <div className="flex flex-col text-sm h-full justify-end">
@@ -167,7 +163,7 @@ export const Header = () => {
           </Button>
           <div className="border-r hidden md:inline"></div>
           {/* <Button variant="outline">Contact Us</Button> */}
-          <Button className="hidden md:flex">Get started Now!</Button>
+          <Button className="hidden md:flex">Sign Up Now</Button>
         </div>
         <div className="flex w-12 shrink lg:hidden items-end justify-end">
           <Button variant="ghost" onClick={() => setOpen(!isOpen)}>

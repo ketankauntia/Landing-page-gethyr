@@ -10,7 +10,13 @@ import { Button } from "@/components/ui/button";
 export const Hero = () => {
   const [titleNumber, setTitleNumber] = useState(0);
   const titles = useMemo(
-    () => ["amazing", "new", "wonderful", "beautiful", "smart"],
+    // () => ["amazing", "new", "wonderful", "beautiful", "smart"],
+    () => [
+      "Knowledge Sparks",
+      "Innovation Ignites",
+      "Future Reshapes",
+      // "Ideas are Empowered",
+    ],
     []
   );
 
@@ -28,15 +34,15 @@ export const Hero = () => {
   return (
     <div className="w-full">
       <div className="container mx-auto">
-        <div className="flex gap-8 py-20 lg:py-40 items-center justify-center flex-col">
-          <div>
+        <div className="flex gap-8 py-20 lg:py-40 items-center justify-center flex-col mt-10">
+          {/* <div>
             <Button variant="secondary" size="sm" className="gap-4">
               Read our launch article <MoveRight className="w-4 h-4" />
             </Button>
-          </div>
+          </div> */}
           <div className="flex gap-4 flex-col">
             <h1 className="text-5xl md:text-7xl max-w-2xl tracking-tighter text-center font-regular">
-              <span className="text-spektr-cyan-50">This is something</span>
+              <span className="text-spektr-cyan-50">a place where</span>
               <span className="relative flex w-full justify-center overflow-hidden text-center md:pb-4 md:pt-1">
                 &nbsp;
                 {titles.map((title, index) => (
@@ -71,10 +77,14 @@ export const Hero = () => {
             </p>
           </div>
           <div className="flex flex-row gap-3">
+            {/* NOT REQUIRED BUTTON
             <Button size="lg" className="gap-4" variant="outline">
               Jump on a call <PhoneCall className="w-4 h-4" />
-            </Button>
-            <Button size="lg" className="gap-4">
+            </Button> */}
+            {/* <Button size="lg" className="gap-4">
+              Sign up here <MoveRight className="w-4 h-4" />
+            </Button> */}
+            <Button size="lg" className="px-8 py-6 gap-4">
               Sign up here <MoveRight className="w-4 h-4" />
             </Button>
           </div>
