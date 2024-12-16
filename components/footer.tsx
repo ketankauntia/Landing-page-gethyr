@@ -3,51 +3,74 @@ import Link from "next/link";
 export const Footer = () => {
   const navigationItems = [
     {
-      title: "Home",
+      title: "Contact Us",
       href: "/",
       description: "",
-    },
-    {
-      title: "Product",
-      description: "Managing a small business today is already tough.",
       items: [
         {
-          title: "Reports",
-          href: "/reports",
+          title: "Dr. Satya Ranjan Dash",
+          href: "/",
         },
         {
-          title: "Statistics",
-          href: "/statistics",
+          title:
+            "(Associate Professor & Dean) School of Computer Applications (KIT-DU) ",
+          href: "/",
         },
         {
-          title: "Dashboards",
-          href: "/dashboards",
-        },
-        {
-          title: "Recordings",
-          href: "/recordings",
+          title: "sdashfca@kiit.ac.in",
+          href: "/",
         },
       ],
     },
     {
-      title: "Company",
+      title: "Research Groups",
       description: "Managing a small business today is already tough.",
       items: [
+        {
+          title: "AI/ML",
+          href: "/ai-ml",
+        },
+        {
+          title: "Speech Processing",
+          href: "/speech-processing",
+        },
+        {
+          title: "NLP",
+          href: "/nlp",
+        },
+        {
+          title: "Blockchain",
+          href: "/blockchain",
+        },
+        {
+          title: "web dev",
+          href: "/web-dev",
+        },
+        {
+          title: "Image Processing",
+          href: "/image-processing",
+        },
+      ],
+    },
+    {
+      title: "Imp Links",
+      description: "Managing a small business today is already tough.",
+      items: [
+        {
+          title: "Home",
+          href: "/",
+        },
         {
           title: "About us",
           href: "/about",
         },
         {
-          title: "Fundraising",
-          href: "/fundraising",
+          title: "Contact Us",
+          href: "/contactUs",
         },
         {
-          title: "Investors",
-          href: "/investors",
-        },
-        {
-          title: "Contact us",
-          href: "/contact",
+          title: "All Events",
+          href: "/events",
         },
       ],
     },
@@ -60,21 +83,24 @@ export const Footer = () => {
           <div className="flex gap-8 flex-col items-start">
             <div className="flex gap-2 flex-col">
               <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular text-left">
-                TWBlocks™
+                Student Research Center
               </h2>
               <p className="text-lg max-w-lg leading-relaxed tracking-tight text-background/75 text-left">
-                Managing a small business today is already tough.
+                A place where Knowledge Sparks, Innovation Ignites, Future
+                Reshapes.
               </p>
             </div>
             <div className="flex gap-20 flex-row">
-              <div className="flex flex-col text-sm max-w-lg leading-relaxed tracking-tight text-background/75 text-left">
-                <p>1 Tailwind Way</p>
-                <p>Menlo Park</p>
-                <p>CA 94025</p>
+              <div className="flex flex-row text-sm max-w-lg leading-relaxed tracking-tight text-background/75 text-left">
+                <Link className="mr-6" href="/">
+                  Privacy Policy
+                </Link>
+                <Link href="/">Terms of service</Link>
               </div>
               <div className="flex flex-col text-sm max-w-lg leading-relaxed tracking-tight text-background/75 text-left">
-                <Link href="/">Terms of service</Link>
-                <Link href="/">Privacy Policy</Link>
+                {/* <p>1 Tailwind Way</p>
+                <p>Menlo Park</p>
+                <p>CA 94025</p> */}
               </div>
             </div>
           </div>

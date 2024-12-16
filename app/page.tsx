@@ -1,6 +1,6 @@
 import { AboutProgramSection } from "@/components/AboutProgram";
 import { Case } from "@/components/case";
-import { CoordinatorSection } from "@/components/Coordinatior";
+import { CoordinatorSection } from "@/components/Coordinator";
 import { CTA } from "@/components/cta";
 import { FAQ } from "@/components/faq";
 import { Footer } from "@/components/footer";

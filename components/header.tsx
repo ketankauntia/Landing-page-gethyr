@@ -163,7 +163,7 @@ export const Header = () => {
           </Button>
           <div className="border-r hidden md:inline"></div>
           {/* <Button variant="outline">Contact Us</Button> */}
-          <Button className="hidden md:flex">Sign Up Now</Button>
+          <Button className="hidden md:flex">Register Now</Button>
         </div>
         <div className="flex w-12 shrink lg:hidden items-end justify-end">
           <Button variant="ghost" onClick={() => setOpen(!isOpen)}>

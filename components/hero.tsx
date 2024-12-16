@@ -85,7 +85,7 @@ export const Hero = () => {
               Sign up here <MoveRight className="w-4 h-4" />
             </Button> */}
             <Button size="lg" className="px-8 py-6 gap-4">
-              Sign up here <MoveRight className="w-4 h-4" />
+              Register here <MoveRight className="w-4 h-4" />
             </Button>
           </div>
         </div>
