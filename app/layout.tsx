@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Student Research Center",
-  description: "Student Research Center", // page title
+  title: "GetHyr | India's #1 talent search company",
+  description: "GetHyr | India's #1 talent search company", // page title
 };
 
 export default function RootLayout({

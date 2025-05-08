@@ -21,8 +21,8 @@ export const Header = () => {
       description: "",
     },
     {
-      title: "Research Groups",
-      description: "Join the Research Group that suits you best ;)",
+      title: "Talent Pool",
+      description: "The right talent that suits you best ;)",
       items: [
         {
           title: "AI/ML",
@@ -150,20 +150,20 @@ export const Header = () => {
         </div> */}
         <div className="w-full flex justify-center lg:w-auto lg:justify-center">
           <p className="font-semibold whitespace-nowrap text-center lg:text-left ml-4">
-            Student Research Center
+            GetHyr
           </p>
         </div>
 
         <div className="flex justify-end w-full gap-4">
           <Button variant="ghost" className="hidden md:inline">
-            All Events
+            About Us
           </Button>
           <Button variant="ghost" className="hidden md:inline">
-            Contact Us
+            Why Us?
           </Button>
           <div className="border-r hidden md:inline"></div>
           {/* <Button variant="outline">Contact Us</Button> */}
-          <Button className="hidden md:flex">Register Now</Button>
+          <Button className="hidden md:flex">Contact Us</Button>
         </div>
         <div className="flex w-12 shrink lg:hidden items-end justify-end">
           <Button variant="ghost" onClick={() => setOpen(!isOpen)}>

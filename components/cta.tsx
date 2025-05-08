@@ -11,7 +11,7 @@ export const CTA = () => (
         </div> */}
         <div className="flex flex-col gap-2">
           <h3 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular">
-            Excited? Register Now!
+            Excited? Let&apos;s Connect!
           </h3>
           <p className="text-lg leading-relaxed tracking-tight text-muted-foreground max-w-xl  pt-3 ">
             Managing a small business today is already tough. Avoid further
@@ -20,14 +20,11 @@ export const CTA = () => (
           </p>
         </div>
         <div className="flex flex-row gap-4">
-          {/* <Button className="gap-4" variant="outline">
+          <Button className="gap-4" variant="outline">
             Jump on a call <PhoneCall className="w-4 h-4" />
           </Button>
           <Button className="gap-4">
-            Sign up here <MoveRight className="w-4 h-4" />
-          </Button> */}
-          <Button size="lg" className="px-8 py-6 gap-4">
-            Register <MoveRight className="w-4 h-4" />
+            Get in Touch <MoveRight className="w-4 h-4" />
           </Button>
         </div>
       </div>
